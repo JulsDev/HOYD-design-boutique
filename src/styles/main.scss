@@ -1,0 +1,23 @@
+
+// colors
+$bg: #61c4d9;
+$green: #0f5a47;
+$black: #0d0d0d;
+$white: #ffffff;
+$border-color: #dde3bd;
+
+//scrins
+$bp-desktop-hd: "1440px";
+$bp-desktop: "1024px";
+$bp-tablets: "768px";
+$bp-phones: "480px";
+$bp-phones-small: "375px";
+
+
+// notmalize
+@import "_misc/normalize.scss";
+
+// layout
+@import "_misc/*.scss";
+
+@import "blocks/*.scss";

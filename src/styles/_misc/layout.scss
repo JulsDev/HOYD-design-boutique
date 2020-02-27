@@ -1,0 +1,77 @@
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  margin: 0;          /* у body по умолчанию отступы 8px */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $white; 
+  font-size: 16px;
+  font-family: 'alegreya_sans', Helvetica, sans-serif;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container{
+  position: relative;
+  margin: 0 auto;
+  max-width: 945px;
+  height: 100%;
+}
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  font-weight: normal;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
