@@ -1,0 +1,70 @@
+.section-competence {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title__competence {
+  margin-bottom: 8%;
+}
+
+.competences {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 940px;
+  max-height: 418px;
+}
+
+.competences__block {
+  width: 100%;
+  height: 100%;
+  max-width: 290px;
+  box-shadow: 0 7px 35px 0 rgba(98, 172, 193, 0.15);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  margin-right: 5%;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  &--design {
+    border-radius: 70px 30px 30px 70px;
+  }
+  &--visual {
+    border-radius: 30px;
+  }
+  &--consulting {
+    border-radius: 30px 70px 70px 30px;
+  }
+}
+
+.competences__image {
+  margin-bottom: 100px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.competences__pic {
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  max-height: 91px;
+}
+
+.competences__text {
+  font-family: SFProDisplay;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  color: $text;
+  text-align: center;
+}

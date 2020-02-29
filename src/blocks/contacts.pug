@@ -1,0 +1,14 @@
+section.section-contacts
+  h2.title.title__contacts
+    | contact us
+  .form-wrapper
+    form.form__content(action="formdata" method="post" id="data")
+        input.form__input.form__block-input(type='email', name='email', placeholder='E-mail', required='')             
+        select.form__input.form__input--select(name='service-list', form='data')
+                option.option__text Type of service
+                option.option__text(value="1") Option 1
+                option.option__text(value="2") Option 2
+                option.option__text(value="3") Option 3     
+        textarea.form__input.form__textarea(id="message" name="message" type="text" required rows="2"
+                placeholder="Short description…")
+    button(type="submit").form__button Send

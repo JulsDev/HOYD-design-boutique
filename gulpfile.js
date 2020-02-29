@@ -40,12 +40,17 @@ task( 'clean', () => {
 // });
 
 task("pug", () => {
-  return src('./src/pages/**/*.pug')
+  return src('./src/pages/**/*.pug', './src/blocks/**/*.pug')
       .pipe(pug({
         pretty: true
       }))
       .pipe(dest("./dist"))
+      .pipe(reload({stream: true}))
 });
+// task("pug:blocks", () => {
+//   return src('./src/blocks/**/*.pug')
+//       .pipe(reload({stream: true}))
+// });
 
 task("copy:fonts", () => {
   return src('./src/fonts/**/*')
@@ -122,7 +127,7 @@ task('server', () => {
       server: {
           baseDir: "./dist",
       },
-      //open: false
+      // open: false
   });
 });
 
@@ -131,6 +136,7 @@ task('server', () => {
 // и если произошли какие-то изменения, будем вызывать таск styles
 // watch("./src/*.html", series("copy:html"));
 watch("./src/pages/**/*.pug", series("pug"));
+watch("./src/blocks/**/*.pug", series("pug"));
 watch("./src/styles/**/*.scss", series("styles"));
 watch("./src/fonts/**/*", series("copy:fonts"));
 watch("./src/img/**/*", series("copy:images"));

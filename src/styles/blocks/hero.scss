@@ -1,0 +1,23 @@
+.section-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: rem(550px);
+}
+
+.section-main__image {
+  max-width: 440px;
+  margin-bottom: 130px;
+}
+
+.section-main__banner {
+  width: 100%;
+  height: 100%;
+}
+
+.section-main__reinvent {
+  letter-spacing: 6px;
+  font-size: 24px;
+  color: $text;
+}

@@ -1,0 +1,18 @@
+.menu {
+  display: flex;
+  margin-right: 76px;
+}
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 37px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.nav-link {
+  color: $text;
+}

@@ -1,6 +1,12 @@
 header.header
-  .header-block
-    a.header-logo(href='./') 
-      +image(`../img/logo.png`, 'header-logo__img', 'HOYD logo')
-    .header-nav
-      include ./nav
+  .container
+    .header-block
+      .header-block__left
+        a.header-logo(href='./') 
+          +image(`../img/logo.png`, 'header-logo__img', 'HOYD logo')
+      .header-block__right
+        .menu
+          include ./menu
+        .language-block
+          span.language-block__text en
+          .language-block__switcher ˆ

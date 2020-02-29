@@ -1,27 +1,28 @@
 include ../blocks/mixins.pug
 
-doctype html
+<!DOCTYPE html>
 html(lang='en')
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    <link rel="stylesheet" href="./main.css">
     title HOYD Studio
   body
 
     .wrapper
-      .conteiner
 
-        // Header
-        include ../blocks/header
+      // Header
+      include ../blocks/header
 
-        // Banner
-        
-        // About us
-        // our competence
-        // some of our works
-        // our clients
-        //contact us
+      // Content
+      .container
+        include ../blocks/hero
+        include ../blocks/about
+        include ../blocks/competence
+        include ../blocks/works
+        include ../blocks/clients
+        include ../blocks/contacts
 
-        //Footer
-        include ../blocks/footer
+      // Footer
+      include ../blocks/footer
