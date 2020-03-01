@@ -86,7 +86,8 @@
 }
 
 .work-descr__title {
-  font-family: BungeeHairline;
+  font-family: 'BungeeHairline';
+  font-weight: 700;
   font-size: 36px;
   line-height: 0.78;
   letter-spacing: 10px;
@@ -95,8 +96,9 @@
   margin-bottom: 8px;
 }
 .work-descr__subtitle {
-  font-family: BungeeHairline;
+  font-family: 'BungeeHairline';
   font-size: 20px;
+  font-weight: 600;
   line-height: 1.4;
   letter-spacing: 5.56px;
   color: $main;
@@ -112,9 +114,8 @@
   margin-right: 20px;
 }
 .work-descr__text {
-  font-family: AvenirNext;
+  font-family: 'AvenirNext_UltraLight';
   font-size: 20px;
-  font-weight: 200;
   letter-spacing: 1px;
   color: $text;
 

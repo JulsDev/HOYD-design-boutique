@@ -47,10 +47,6 @@ task("pug", () => {
       .pipe(dest("./dist"))
       .pipe(reload({stream: true}))
 });
-// task("pug:blocks", () => {
-//   return src('./src/blocks/**/*.pug')
-//       .pipe(reload({stream: true}))
-// });
 
 task("copy:fonts", () => {
   return src('./src/fonts/**/*')
