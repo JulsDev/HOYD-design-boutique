@@ -1,0 +1,29 @@
+- var tags = ['financial', 'blockchain', 'government', 'social', 'other...']
+- 
+  var cases = [
+    {img: '../img/logo.png', alt: 'MOS PARKING', title: 'MOS PARKING', descr: 'Мобильное приложение для оплаты московских парковок в одно нажатие', workType: 'Аналитика + Проектирование + Дизайн', workLink: 'http://mosparking.ru/', workLinkText: 'www.mosparking.com'},
+    {img: '../img/logo.png', alt: 'MOS PARKING', title: 'MOS PARKING', descr: 'Мобильное приложение для оплаты московских парковок в одно нажатие', workType: 'Аналитика + Проектирование + Дизайн', workLink: 'http://mosparking.ru/', workLinkText: 'www.mosparking.com'}
+  ]
+
+.section-cases
+  h2.title.title__cases
+    | our cases
+  ul.cases-tags__list
+    each item in tags
+      a.cases-tags__link(href!='#')
+        li.cases-tags__item
+           | #{item}
+  ul.case-block__list
+    each item in cases
+      li.case-block__item.case__card
+        .case__logo
+          +image(`${item.img}`, 'case__logo_link', `${item.alt}`)
+        h3.case__title #{item.title}
+        p.case__descr #{item.descr}
+        p.case__work-type #{item.workType}
+        .case__photo
+          p.case__photo_text Область для фотографии проекта
+          p.case__photo_size 650x450
+        a(href=item.workLink, target="_blank").case__link #{item.workLinkText}
+        button.button.button__case
+          | Apply for design

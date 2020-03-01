@@ -15,4 +15,8 @@
 
 .nav-link {
   color: $text;
+  
+  &:hover {
+    color: $link;
+  }
 }

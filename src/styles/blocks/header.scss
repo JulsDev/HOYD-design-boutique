@@ -1,10 +1,12 @@
 .header {
   display: flex;
   width: 100%;
-  position: absolute;
+  position: fixed;
   content: '';
   top: 0;
   left: 0;
+  z-index: 2;
+  background-color: $white;
 }
 
 .header-block {
@@ -27,4 +29,17 @@
 
 .language-block {
   display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language-block__text {
+  margin-right: 5px;
+}
+.triangle-down {
+  height: 0;
+  border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+  border-top: 4px solid $text;
+  border-bottom-width: 0;
 }

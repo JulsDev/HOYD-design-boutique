@@ -1,0 +1,78 @@
+.case__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px;
+  border-radius: 70px;
+  box-shadow: 0 10px 70px 0 rgba(98, 172, 193, 0.15);
+  background-color: $white;
+  color: $text;
+  font-family: SFProDisplay;
+}
+
+.case__logo {
+  margin-bottom: 30px;
+}
+
+.case__logo_link {
+  width: 100%;
+  height: 100%;
+  max-width: 90px;
+}
+
+.case__title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin-bottom: 25px;
+}
+
+.case__descr {
+  font-size: 20px;
+  letter-spacing: 1.67px;
+  margin-bottom: 25px;
+}
+
+.case__work-type {
+  line-height: 1.33;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  font-weight: 200;
+  opacity: 0.5;
+  margin-bottom: 35px;
+}
+
+.case-block__item {
+  margin-bottom: 40px;
+}
+
+.case__photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 650px;
+  height: 450px;
+  border-radius: 10px;
+  border: dotted 1px $text;
+  margin-bottom: 40px;
+
+  &_text {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+  &_size {
+    font-weight: 600;
+  }
+}
+
+.case__link {
+  font-size: 20px;
+  letter-spacing: 1.67px;
+  text-decoration: underline;
+  color: $text;
+  margin-bottom: 37px;
+}
