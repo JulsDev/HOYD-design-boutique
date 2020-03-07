@@ -38,50 +38,82 @@
 }
 
 .title__works {
-  margin-bottom: 150px;
+  margin-bottom: 13%;
 }
 
 .work-block {
   width: 100%;
   height: 100%;
-  max-width: 940px;
+  max-width: 85%;
   max-height: 370px;
   display: flex;
+
+  @include tablets {
+    max-width: 85%;
+  }
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .work-image {
-  
-  &:hover {
-    // transform: scale(1.2);
-    transition: transform 1s ease-out;
-    transform: rotateY(180deg); 
+  width: 45%;
+
+  @include tablets {
+    margin-right: 20px;
   }
-  
+  @include phones {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 8%;
+  }
 }
 .work-image__pic {
   width: 100%;
   height: 100%;
-  max-width: 320px;
-  margin-right: 88px;
+  margin-right: 80px;
 
   &--center {
     width: 100%;
     height: 100%;
     max-width: 320px;
     margin-right: 0;
-    margin-left: 88px;
+    margin-left: 80px;
+    order: 2;
+
+    @include tablets {
+      margin-left: 10px;
+    }
+    @include phones {
+      margin-left: 0;
+      order: 1;
+    }
   }
 }
 
 // descr block
 .work-descr {
-  width: 50%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 
   &__left{
     align-items: flex-start;
+    order: 1;
+    @include tablets {
+      margin-bottom: 10%;
+    }
+    @include phones {
+      order: 2;
+      align-items: center;
+    }
+  }
+
+  @include phones {
+    width: 90%;
+    align-items: center;
   }
 }
 
@@ -94,6 +126,13 @@
   color: $text;
   text-transform: uppercase;
   margin-bottom: 8px;
+
+  @include tablets {
+    font-size: 28px;
+  }
+  @include phones {
+    font-size: 20px;
+  }
 }
 .work-descr__subtitle {
   font-family: 'BungeeHairline';
@@ -108,7 +147,7 @@
 
 .work-descr__tags {
   display: flex;
-  margin-bottom: 83px;
+  margin-bottom: 15%;
 }
 .work__tag--space {
   margin-right: 20px;
@@ -121,5 +160,12 @@
 
   &--right{
     text-align: end;
+  }
+
+  @include tablets {
+    font-size: 18px;
+  }
+  @include phones {
+    font-size: 14px;
   }
 }
