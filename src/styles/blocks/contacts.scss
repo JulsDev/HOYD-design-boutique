@@ -18,6 +18,16 @@
   box-shadow: 0 10px 70px 0 rgba(98, 172, 193, 0.15);
   background-color: $white;
   padding: 50px 65px;
+
+  @include tablets {
+    max-width: 75%;
+  }
+  @include phones {
+    max-width: 85%;
+    max-height: 425px;
+    border-radius: 50px;
+    padding: 45px 38px;
+  }
 }
 
 

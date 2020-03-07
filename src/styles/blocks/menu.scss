@@ -1,6 +1,10 @@
 .menu {
   display: flex;
   margin-right: 76px;
+
+  @include tablets {
+    margin-right: 0;
+  }
 }
 .nav-list {
   display: flex;

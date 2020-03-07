@@ -8,6 +8,7 @@
   z-index: 2;
   background-color: $white;
   font-family: 'AvenirNext';
+  box-shadow: 0 10px 70px 0 rgba(98, 172, 193, 0.1);
 }
 
 .header-block {
@@ -25,7 +26,7 @@
 
 .header-block__right {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .language-block {

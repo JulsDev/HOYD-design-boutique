@@ -21,8 +21,17 @@
 }
 
 .section-main__image {
-  max-width: 440px;
-  margin-bottom: 130px;
+  max-width: 42%;
+  margin-bottom: 12%;
+
+  @include tablets {
+    max-width: 45%;
+    margin-bottom: 10%;
+  }
+  @include phones {
+    max-width: 65%;
+    margin-bottom: 12%;
+  }
 }
 
 .section-main__banner {
@@ -36,4 +45,14 @@
   letter-spacing: 6px;
   font-size: 24px;
   color: $text;
+  text-align: center;
+
+  @include tablets {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  @include phones {
+    font-size: 12px;
+    padding: 0 10%;
+  }
 }
