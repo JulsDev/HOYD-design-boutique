@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="stylesheet" href="./main.css">
+    <title>HOYD Studio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header-->
+      <header class="header">
+        <div class="container">
+          <div class="header-block">
+            <div class="header-block__left"><a class="header-logo" href="./index.html"> <img class="header-logo__img" src="images/../img/logo.png" alt="HOYD logo"/></a></div>
+            <div class="header-block__right">
+              <div class="menu">
+                <nav class="nav">
+                  <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Content-->
+      <div class="container">
+        <div class="section-cases">
+          <h2 class="title title__cases">our cases</h2>
+          <ul class="cases-tags__list"><a class="cases-tags__link" href="#">
+              <li class="cases-tags__item">financial</li></a><a class="cases-tags__link" href="#">
+              <li class="cases-tags__item">blockchain</li></a><a class="cases-tags__link" href="#">
+              <li class="cases-tags__item">government</li></a><a class="cases-tags__link" href="#">
+              <li class="cases-tags__item">social</li></a><a class="cases-tags__link" href="#">
+              <li class="cases-tags__item">other...</li></a>
+          </ul>
+          <ul class="case-block__list">
+            <li class="case-block__item case__card">
+              <div class="case__logo"><img class="case__logo_link" src="images/../img/logo.png" alt="MOS PARKING"/>
+              </div>
+              <h3 class="case__title">MOS PARKING</h3>
+              <p class="case__descr">Мобильное приложение для оплаты московских парковок в одно нажатие</p>
+              <p class="case__work-type">Аналитика + Проектирование + Дизайн</p>
+              <div class="case__photo">
+                <p class="case__photo_text">Область для фотографии проекта</p>
+                <p class="case__photo_size">650x450</p>
+              </div><a class="case__link" href="http://mosparking.ru/" target="_blank">www.mosparking.com</a>
+              <button class="button button__case">Apply for design</button>
+            </li>
+            <li class="case-block__item case__card">
+              <div class="case__logo"><img class="case__logo_link" src="images/../img/logo.png" alt="MOS PARKING"/>
+              </div>
+              <h3 class="case__title">MOS PARKING</h3>
+              <p class="case__descr">Мобильное приложение для оплаты московских парковок в одно нажатие</p>
+              <p class="case__work-type">Аналитика + Проектирование + Дизайн</p>
+              <div class="case__photo">
+                <p class="case__photo_text">Область для фотографии проекта</p>
+                <p class="case__photo_size">650x450</p>
+              </div><a class="case__link" href="http://mosparking.ru/" target="_blank">www.mosparking.com</a>
+              <button class="button button__case">Apply for design</button>
+            </li>
+          </ul>
+        </div>
+        <section class="section-contacts" id="contact">
+          <h2 class="title title__contacts">contact us</h2>
+          <div class="form-wrapper">
+            <form class="form__content" action="mail.php" method="post" id="data">
+              <input class="form__input form__block-input" type="email" name="user_email" placeholder="E-mail" required=""/>
+              <select class="form__input form__input--select" name="user_options" form="data">
+                <option class="option__text">Type of service</option>
+                <option class="option__text" value="1">Option 1</option>
+                <option class="option__text" value="2">Option 2</option>
+                <option class="option__text" value="3">Option 3     </option>
+              </select>
+              <textarea class="form__input form__textarea" id="message" name="user_message" type="text" rows="2" required="required" placeholder="Short description…"></textarea>
+              <button class="button button__form" type="submit">Send</button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <!-- Footer-->
+      <footer class="footer">
+        <div class="footer-text">Hoyd Design Boutique  ©  2019</div>
+      </footer>
+    </div>
+  </body>
+</html>
