@@ -66,7 +66,7 @@
   @include phones {
     width: 80%;
     margin-right: 0;
-    margin-bottom: 8%;
+    margin-bottom: 15%;
   }
 }
 .work-image__pic {
@@ -80,7 +80,6 @@
     max-width: 320px;
     margin-right: 0;
     margin-left: 80px;
-    order: 2;
 
     @include tablets {
       margin-left: 10px;
@@ -101,7 +100,6 @@
 
   &__left{
     align-items: flex-start;
-    order: 1;
     @include tablets {
       margin-bottom: 10%;
     }

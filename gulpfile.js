@@ -32,12 +32,12 @@ task( 'clean', () => {
     return src( 'dist/**/*', { read: false }).pipe( rm() )
 });
 
-// Просто копируем файл с разметкой, шрифты, картинки и видео в папку dist
-// task("copy:html", () => {
-//     return src('./src/**/*.html')
-//       .pipe(dest('./dist'))
-//       .pipe(reload({stream: true}))
-// });
+// Просто копируем файл с разметкой в папку dist
+task("copy:html", () => {
+    return src('./src/**/*.html')
+      .pipe(dest('./dist'))
+      .pipe(reload({stream: true}))
+});
 
 task("pug", () => {
   return src('./src/pages/**/*.pug', './src/blocks/**/*.pug')
@@ -115,6 +115,17 @@ task("scripts", () => {
     .pipe(reload({stream: true}))
 });
 
+// php files
+task("copy:php", () => {
+  return src(('./src/phpmailer/*'))
+    .pipe(dest('./dist/phpmailer'))
+    .pipe(reload({stream: true}))
+});
+task("copy:mail-php", () => {
+  return src(('./src/mail.php'))
+    .pipe(dest('./dist'))
+    .pipe(reload({stream: true}))
+});
 
 // После запуска данного таска browser-sync развернет нам сервер для разработки,
 // для которого файлы будут взяты из папочки dist
@@ -138,6 +149,8 @@ watch("./src/fonts/**/*", series("copy:fonts"));
 watch("./src/img/**/*", series("copy:images"));
 watch("./src/img/icons/*.svg", series("sprite"));
 watch("./src/scripts/*.js", series("scripts"));
+watch("./src/phpmailer/*", series("copy:php"));
+watch("./src/mail.php", series("copy:mail-php"));
 
 // дефолтный таск
-task("default", series("clean", parallel("pug", "copy:fonts", "copy:images", "sprite", "styles", "scripts"), "server"));
+task("default", series("clean", parallel("copy:html", "pug", "copy:fonts", "copy:images", "sprite", "styles", "scripts", "copy:php", "copy:mail-php"), "server"));
